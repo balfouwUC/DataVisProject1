@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--Header-->
+    <h2>Health in the USA</h2>
+    <h3>William Balfour</h3>
+    <hr />
+
+    <!--Body-->
+    <div style="display: flex;flex-wrap: wrap;">
+
+        <!--Scatterplot-->
+        <div style="width: 50%;">
+            <strong>Y-Axis</strong>
+            <br/>
+            <select id="scatterplot-y-value">
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="median_household_income">Median Household Income</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="air_quality">Air Quality</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="number_of_primary_care_physicians">Total Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+                <option value="percent_inactive">Inactive %</option>
+            </select>
+        </div>
+        <div style="width: 50%;">
+            <strong>X-Axis</strong>
+            <br/>
+            <select id="scatterplot-x-value"> 
+                <option value="percent_inactive">Inactive %</option>               
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="median_household_income">Median Household Income</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="air_quality">Air Quality</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="number_of_primary_care_physicians">Total Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+            </select>
+        </div>
+        <div style="width:100%;">
+            <svg id="scatterplot"></svg>
+        </div>
+
+        <!--Histogram-->
+        <div style="width: 50%;">
+            <strong>First Value</strong>
+            <br/>
+            <select id="histogram-value-1">
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="median_household_income">Median Household Income</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="air_quality">Air Quality</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="number_of_primary_care_physicians">Total Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+                <option value="percent_inactive">Inactive %</option>
+            </select>
+        </div>
+        <div style="width: 50%;">
+            <strong>Second Value</strong>
+            <br/>
+            <select id="histogram-value-2">
+                <option value="percent_inactive">Inactive %</option>               
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="median_household_income">Median Household Income</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="air_quality">Air Quality</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="number_of_primary_care_physicians">Total Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+            </select>
+        </div>
+        <div style="width:100%">
+            <svg id="histogram"></svg>
+        </div>
+
+        <!--Choropleth Map-->
+        <div style="width: 50%;">
+            <strong>Value</strong>
+            <br/>
+            <select id="map-value-1">
+                <option value="median_household_income">Median Household Income</option>
+                <option value="percent_inactive">Inactive %</option>               
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="air_quality">Air Quality</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="number_of_primary_care_physicians">Total Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+            </select>
+        </div>
+        <div style="width: 50%;">
+            <strong>Value</strong>
+            <br/>
+            <select id="map-value-2">
+                <option value="air_quality">Air Quality</option>
+                <option value="number_of_hospitals">Number of Hospitals</option>
+                <option value="median_household_income">Median Household Income</option>
+                <option value="percent_inactive">Inactive %</option>               
+                <option value="percent_coronary_heart_disease">Heart Disease %</option>
+                <option value="poverty_perc">Poverty %</option>
+                <option value="education_less_than_high_school_percent">Below High School Education %</option>
+                <option value="park_access">Park Access</option>
+                <option value="percent_smoking">Smoking %</option>
+                <option value="elderly_percentage">Elderly %</option>
+                <option value="number_of_primary_care_physicians">Primary Care Physicians</option>
+                <option value="percent_no_heath_insurance">No Health Insurance %</option>
+                <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+                <option value="percent_stroke">Stroke %</option>
+                <option value="percent_high_cholesterol">High Cholesterol %</option>
+            </select>
+        </div>
+        <div style="width:50%;">
+            <svg height="300" width="600" id="choropleth-1"></svg>
+        </div>
+        <div style="width:50%">
+            <svg height="300" width="600" id="choropleth-2"></svg>
+        </div>
+    </div>
+    <div id="tooltip"></div>
+    <!--Footer-->
+    <hr />
+    <span>Data From <a href="https://www.cdc.gov/dhdsp/maps/atlas/index.htm" target="_blank">The CDC</a></span>
+    <br />
+    <span>Visualizations powered by <a href="https://d3js.org/">d3</a></span>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/choropleth.js"></script>
+    <script src="js/topojson.v3.js"></script>
+</body>
+</html>
